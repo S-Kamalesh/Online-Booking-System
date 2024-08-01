@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>online Booking</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(./CSS/Image/download.jfif);
+      background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .service-box {
+      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-box i {
+      font-size: 3em;
+      color: #333;
+    }
+
+    .service-box h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .service-box p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Booking</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li> <a href="flights.html">Flights</a></li>
+      <li> <a href="hotel.html">Hotels</a></li>
+      <li><a href="train.html">Trains</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section>
+      <h2>Book Your Ticket</h2>
+      <form>
+        <div class="form-group">
+          <label for="from">From:</label>
+          <input type="text" id="from" name="from" placeholder="Enter your starting point">
+        </div>
+        <div class="form-group">
+          <label for="to">To:</label>
+          <input type="text" id="to" name="to" placeholder="Enter your destination">
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <button type="submit" class="button">Book Now</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Our Services</h2>
+      <div class="service-box">
+        <i class="fas fa-plane"></i>
+        <a href="flights.html"><h3>Flights</h3></a>
+        <p>Book your flights with ease.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-hotel"></i>
+        <a href="hotel.html"><h3>Hotels</h3></a>
+        <p>Find your perfect accommodation.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-train"></i>
+        <a href="train.html"><h3>Trains</h3></a>
+        <p>Travel by train, hassle-free.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Online Booking</p>
+  </footer>
+</body>
+</html>
